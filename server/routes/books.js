@@ -37,7 +37,7 @@ router.post('/add', (req, res, next) => {
   console.log("====processAddPage")
   let newBook = book({
     "Title": req.body.title,
-    "Description": req.body.Description,
+    "Description": req.body.description,
     "Price": req.body.price,
     "Author": req.body.author,
     "Genre": req.body.genre
@@ -82,7 +82,7 @@ router.post('/:id', (req, res, next) => {
   let updatedBook = book({
     "_id": id,
     "Title": req.body.title,
-    "Description": req.body.Description,
+    "Description": req.body.description,
     "Price": req.body.price,
     "Author": req.body.author,
     "Genre": req.body.genre
